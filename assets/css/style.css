@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 840px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.single-memory {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: gray;
+}
+p {
+  margin: 0;
+}
+
+.toggle {
+  border: 2px solid gray;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+
+  transition: transform 1s;
+}
+
+.hide-img {
+  transform: rotateX(90deg);
+}
+
+.show-img {
+  transform: rotateX(0deg);
+}
+
+.hidden {
+  visibility: hidden;
+}
